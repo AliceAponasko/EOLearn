@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		009E63C32027C4C300339944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 009E63C12027C4C300339944 /* Assets.xcassets */; };
+		009E63C82027C4C900339944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009E63C42027C4C900339944 /* LaunchScreen.storyboard */; };
+		009E63C92027C4C900339944 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009E63C62027C4C900339944 /* Main.storyboard */; };
+		00DDBC8C2027C19B00CF48BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC8B2027C19B00CF48BB /* AppDelegate.swift */; };
+		4DC2CB7E6A190BF36A5C5B05 /* Pods_EOLearnTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2CE6166F37A27BE010152A /* Pods_EOLearnTests.framework */; };
+		722259CE8CE06EEBAAF912C6 /* Pods_EOLearn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6719FC19C853B40BFD15BCC9 /* Pods_EOLearn.framework */; };
+		A97CEFD18345AA255CD60E78 /* Pods_EOLearnUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6118E785F24C9FB57B6352A0 /* Pods_EOLearnUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00DDBC9D2027C19B00CF48BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00DDBC802027C19B00CF48BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00DDBC872027C19B00CF48BB;
+			remoteInfo = EOLearn;
+		};
+		00DDBCA82027C19B00CF48BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00DDBC802027C19B00CF48BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00DDBC872027C19B00CF48BB;
+			remoteInfo = EOLearn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		009E63C02027C4C300339944 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		009E63C12027C4C300339944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		009E63C52027C4C900339944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		009E63C72027C4C900339944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00DDBC882027C19B00CF48BB /* EOLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EOLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00DDBC8B2027C19B00CF48BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00DDBC9C2027C19B00CF48BB /* EOLearnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EOLearnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00DDBCA22027C19B00CF48BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00DDBCA72027C19B00CF48BB /* EOLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EOLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00DDBCAD2027C19B00CF48BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		108AFAF08740B1B640CF4D2A /* Pods-EOLearnUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EOLearnUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EOLearnUITests/Pods-EOLearnUITests.release.xcconfig"; sourceTree = "<group>"; };
+		54215F3D3F888E82008036FE /* Pods-EOLearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EOLearn.release.xcconfig"; path = "Pods/Target Support Files/Pods-EOLearn/Pods-EOLearn.release.xcconfig"; sourceTree = "<group>"; };
+		6118E785F24C9FB57B6352A0 /* Pods_EOLearnUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EOLearnUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6719FC19C853B40BFD15BCC9 /* Pods_EOLearn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EOLearn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F1DA793FEC29415A4111460 /* Pods-EOLearnUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EOLearnUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EOLearnUITests/Pods-EOLearnUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A2CE6166F37A27BE010152A /* Pods_EOLearnTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EOLearnTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2F006D167AE24B97AD91D57 /* Pods-EOLearnTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EOLearnTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EOLearnTests/Pods-EOLearnTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7DC6D0FC4A0EC0D12A5D842 /* Pods-EOLearnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EOLearnTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EOLearnTests/Pods-EOLearnTests.release.xcconfig"; sourceTree = "<group>"; };
+		EE801E3A0FAD02A6CA4BB83B /* Pods-EOLearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EOLearn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EOLearn/Pods-EOLearn.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00DDBC852027C19B00CF48BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				722259CE8CE06EEBAAF912C6 /* Pods_EOLearn.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00DDBC992027C19B00CF48BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC2CB7E6A190BF36A5C5B05 /* Pods_EOLearnTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00DDBCA42027C19B00CF48BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97CEFD18345AA255CD60E78 /* Pods_EOLearnUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		009E63BF2027C49B00339944 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				009E63C12027C4C300339944 /* Assets.xcassets */,
+				009E63C42027C4C900339944 /* LaunchScreen.storyboard */,
+				009E63C62027C4C900339944 /* Main.storyboard */,
+				009E63C02027C4C300339944 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		00DDBC7F2027C19B00CF48BB = {
+			isa = PBXGroup;
+			children = (
+				00DDBC8A2027C19B00CF48BB /* EOLearn */,
+				00DDBC9F2027C19B00CF48BB /* EOLearnTests */,
+				00DDBCAA2027C19B00CF48BB /* EOLearnUITests */,
+				00DDBC892027C19B00CF48BB /* Products */,
+				F80C5E1A4BE893B360BA9F2E /* Pods */,
+				0B287643FEE8C305655BA568 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00DDBC892027C19B00CF48BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00DDBC882027C19B00CF48BB /* EOLearn.app */,
+				00DDBC9C2027C19B00CF48BB /* EOLearnTests.xctest */,
+				00DDBCA72027C19B00CF48BB /* EOLearnUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00DDBC8A2027C19B00CF48BB /* EOLearn */ = {
+			isa = PBXGroup;
+			children = (
+				009E63BF2027C49B00339944 /* Resources */,
+				00DDBC8B2027C19B00CF48BB /* AppDelegate.swift */,
+			);
+			path = EOLearn;
+			sourceTree = "<group>";
+		};
+		00DDBC9F2027C19B00CF48BB /* EOLearnTests */ = {
+			isa = PBXGroup;
+			children = (
+				00DDBCA22027C19B00CF48BB /* Info.plist */,
+			);
+			path = EOLearnTests;
+			sourceTree = "<group>";
+		};
+		00DDBCAA2027C19B00CF48BB /* EOLearnUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00DDBCAD2027C19B00CF48BB /* Info.plist */,
+			);
+			path = EOLearnUITests;
+			sourceTree = "<group>";
+		};
+		0B287643FEE8C305655BA568 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6719FC19C853B40BFD15BCC9 /* Pods_EOLearn.framework */,
+				9A2CE6166F37A27BE010152A /* Pods_EOLearnTests.framework */,
+				6118E785F24C9FB57B6352A0 /* Pods_EOLearnUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F80C5E1A4BE893B360BA9F2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE801E3A0FAD02A6CA4BB83B /* Pods-EOLearn.debug.xcconfig */,
+				54215F3D3F888E82008036FE /* Pods-EOLearn.release.xcconfig */,
+				A2F006D167AE24B97AD91D57 /* Pods-EOLearnTests.debug.xcconfig */,
+				E7DC6D0FC4A0EC0D12A5D842 /* Pods-EOLearnTests.release.xcconfig */,
+				7F1DA793FEC29415A4111460 /* Pods-EOLearnUITests.debug.xcconfig */,
+				108AFAF08740B1B640CF4D2A /* Pods-EOLearnUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00DDBC872027C19B00CF48BB /* EOLearn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00DDBCB02027C19B00CF48BB /* Build configuration list for PBXNativeTarget "EOLearn" */;
+			buildPhases = (
+				889E47177E3C1BC5D1A96145 /* [CP] Check Pods Manifest.lock */,
+				00DDBC842027C19B00CF48BB /* Sources */,
+				00DDBC852027C19B00CF48BB /* Frameworks */,
+				00DDBC862027C19B00CF48BB /* Resources */,
+				FAAFE5F8107D005AF241680A /* [CP] Embed Pods Frameworks */,
+				844547BBEE865EC7FE962BB6 /* [CP] Copy Pods Resources */,
+				009E63CA2027C52700339944 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EOLearn;
+			productName = EOLearn;
+			productReference = 00DDBC882027C19B00CF48BB /* EOLearn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00DDBC9B2027C19B00CF48BB /* EOLearnTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00DDBCB32027C19B00CF48BB /* Build configuration list for PBXNativeTarget "EOLearnTests" */;
+			buildPhases = (
+				0EE283A196A4283662AA8BCF /* [CP] Check Pods Manifest.lock */,
+				00DDBC982027C19B00CF48BB /* Sources */,
+				00DDBC992027C19B00CF48BB /* Frameworks */,
+				00DDBC9A2027C19B00CF48BB /* Resources */,
+				86A873E29593C5C07C78168A /* [CP] Embed Pods Frameworks */,
+				860924D24E88266AF42225BE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00DDBC9E2027C19B00CF48BB /* PBXTargetDependency */,
+			);
+			name = EOLearnTests;
+			productName = EOLearnTests;
+			productReference = 00DDBC9C2027C19B00CF48BB /* EOLearnTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00DDBCA62027C19B00CF48BB /* EOLearnUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00DDBCB62027C19B00CF48BB /* Build configuration list for PBXNativeTarget "EOLearnUITests" */;
+			buildPhases = (
+				1972031144DC9629C69DA963 /* [CP] Check Pods Manifest.lock */,
+				00DDBCA32027C19B00CF48BB /* Sources */,
+				00DDBCA42027C19B00CF48BB /* Frameworks */,
+				00DDBCA52027C19B00CF48BB /* Resources */,
+				0C89A86BC6D4F228594DE1B8 /* [CP] Embed Pods Frameworks */,
+				7479296041D25739A85337A8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00DDBCA92027C19B00CF48BB /* PBXTargetDependency */,
+			);
+			name = EOLearnUITests;
+			productName = EOLearnUITests;
+			productReference = 00DDBCA72027C19B00CF48BB /* EOLearnUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00DDBC802027C19B00CF48BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = aliceaponasko;
+				TargetAttributes = {
+					00DDBC872027C19B00CF48BB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					00DDBC9B2027C19B00CF48BB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 00DDBC872027C19B00CF48BB;
+					};
+					00DDBCA62027C19B00CF48BB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 00DDBC872027C19B00CF48BB;
+					};
+				};
+			};
+			buildConfigurationList = 00DDBC832027C19B00CF48BB /* Build configuration list for PBXProject "EOLearn" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00DDBC7F2027C19B00CF48BB;
+			productRefGroup = 00DDBC892027C19B00CF48BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00DDBC872027C19B00CF48BB /* EOLearn */,
+				00DDBC9B2027C19B00CF48BB /* EOLearnTests */,
+				00DDBCA62027C19B00CF48BB /* EOLearnUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00DDBC862027C19B00CF48BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				009E63C82027C4C900339944 /* LaunchScreen.storyboard in Resources */,
+				009E63C32027C4C300339944 /* Assets.xcassets in Resources */,
+				009E63C92027C4C900339944 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00DDBC9A2027C19B00CF48BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00DDBCA52027C19B00CF48BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		009E63CA2027C52700339944 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		0C89A86BC6D4F228594DE1B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EOLearnUITests/Pods-EOLearnUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0EE283A196A4283662AA8BCF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EOLearnTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1972031144DC9629C69DA963 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EOLearnUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7479296041D25739A85337A8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EOLearnUITests/Pods-EOLearnUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		844547BBEE865EC7FE962BB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EOLearn/Pods-EOLearn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		860924D24E88266AF42225BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EOLearnTests/Pods-EOLearnTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86A873E29593C5C07C78168A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EOLearnTests/Pods-EOLearnTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		889E47177E3C1BC5D1A96145 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EOLearn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAAFE5F8107D005AF241680A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EOLearn/Pods-EOLearn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00DDBC842027C19B00CF48BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00DDBC8C2027C19B00CF48BB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00DDBC982027C19B00CF48BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00DDBCA32027C19B00CF48BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00DDBC9E2027C19B00CF48BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00DDBC872027C19B00CF48BB /* EOLearn */;
+			targetProxy = 00DDBC9D2027C19B00CF48BB /* PBXContainerItemProxy */;
+		};
+		00DDBCA92027C19B00CF48BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00DDBC872027C19B00CF48BB /* EOLearn */;
+			targetProxy = 00DDBCA82027C19B00CF48BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		009E63C42027C4C900339944 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				009E63C52027C4C900339944 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		009E63C62027C4C900339944 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				009E63C72027C4C900339944 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00DDBCAE2027C19B00CF48BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00DDBCAF2027C19B00CF48BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00DDBCB12027C19B00CF48BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE801E3A0FAD02A6CA4BB83B /* Pods-EOLearn.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y3Z34S572E;
+				INFOPLIST_FILE = "$(SRCROOT)/EOLearn/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliceaponasko.EOLearn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00DDBCB22027C19B00CF48BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54215F3D3F888E82008036FE /* Pods-EOLearn.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y3Z34S572E;
+				INFOPLIST_FILE = "$(SRCROOT)/EOLearn/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliceaponasko.EOLearn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		00DDBCB42027C19B00CF48BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2F006D167AE24B97AD91D57 /* Pods-EOLearnTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y3Z34S572E;
+				INFOPLIST_FILE = EOLearnTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliceaponasko.EOLearnTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EOLearn.app/EOLearn";
+			};
+			name = Debug;
+		};
+		00DDBCB52027C19B00CF48BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7DC6D0FC4A0EC0D12A5D842 /* Pods-EOLearnTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y3Z34S572E;
+				INFOPLIST_FILE = EOLearnTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliceaponasko.EOLearnTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EOLearn.app/EOLearn";
+			};
+			name = Release;
+		};
+		00DDBCB72027C19B00CF48BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F1DA793FEC29415A4111460 /* Pods-EOLearnUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y3Z34S572E;
+				INFOPLIST_FILE = EOLearnUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliceaponasko.EOLearnUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EOLearn;
+			};
+			name = Debug;
+		};
+		00DDBCB82027C19B00CF48BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 108AFAF08740B1B640CF4D2A /* Pods-EOLearnUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y3Z34S572E;
+				INFOPLIST_FILE = EOLearnUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aliceaponasko.EOLearnUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EOLearn;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00DDBC832027C19B00CF48BB /* Build configuration list for PBXProject "EOLearn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00DDBCAE2027C19B00CF48BB /* Debug */,
+				00DDBCAF2027C19B00CF48BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00DDBCB02027C19B00CF48BB /* Build configuration list for PBXNativeTarget "EOLearn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00DDBCB12027C19B00CF48BB /* Debug */,
+				00DDBCB22027C19B00CF48BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00DDBCB32027C19B00CF48BB /* Build configuration list for PBXNativeTarget "EOLearnTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00DDBCB42027C19B00CF48BB /* Debug */,
+				00DDBCB52027C19B00CF48BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00DDBCB62027C19B00CF48BB /* Build configuration list for PBXNativeTarget "EOLearnUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00DDBCB72027C19B00CF48BB /* Debug */,
+				00DDBCB82027C19B00CF48BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00DDBC802027C19B00CF48BB /* Project object */;
+}
