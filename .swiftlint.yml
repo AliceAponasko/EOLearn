@@ -1,0 +1,23 @@
+disabled_rules: # rule identifiers to exclude from running
+  - trailing_whitespace
+  - todo
+  - type_name
+
+excluded: # paths to ignore during linting
+  - Pods
+  - EOLearn/Resources
+
+line_length: 120
+
+function_body_length: 50
+
+cyclomatic_complexity:
+  warning: 15
+  error: 20
+
+file_length:
+  warning: 1000
+  error: 1500
+
+variable_name:
+  min_length: 2

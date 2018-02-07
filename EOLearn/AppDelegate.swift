@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import XCGLogger
+
+let log = XCGLogger.default
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +19,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+
+        log.setup(
+            level: .debug,
+            showThreadName: true,
+            showLevel: true,
+            showFileNames: true,
+            showLineNumbers: true,
+            writeToFile: nil,
+            fileLevel: nil)
+
         return true
     }
 
