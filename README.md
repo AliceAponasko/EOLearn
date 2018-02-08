@@ -48,7 +48,10 @@ Once XCode is open, click `Run` button at the top left corner.
 
 ## To Do
 
-- pull to refresh
-- courses page empty state
+- add pull to refresh to the courses page
+- add courses page empty state
 - add caching for courses
 - add slide show download progress
+- add unit tests
+- add UI tests
+-
