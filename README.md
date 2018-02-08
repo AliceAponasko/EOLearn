@@ -54,4 +54,5 @@ Once XCode is open, click `Run` button at the top left corner.
 - add slide show download progress
 - add unit tests
 - add UI tests
--
+- develop more complicated downloader
+    - right now it removes all previous files before downloading a new one, maybe we could introduce a smarter cache for slide shows
