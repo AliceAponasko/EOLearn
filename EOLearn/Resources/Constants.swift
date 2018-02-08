@@ -11,7 +11,13 @@ import Foundation
 struct Const {
 
     struct General {
+        static let storyboardId = "Main"
+
         static let okButtonTitle = "OK"
+    }
+
+    struct Courses {
+        static let viewControllerId = "CoursesViewCotroller"
     }
 
     struct Error {
@@ -37,6 +43,9 @@ struct Api {
 
     struct Endpoint {
         static let login = "/v1/tokens"
+        static let courses = "/v1/user/courses"
+        static let course = "/v1/courses/"
+        static let lectureSegment = "/lecture_segments/"
     }
 
     struct StatusCode {

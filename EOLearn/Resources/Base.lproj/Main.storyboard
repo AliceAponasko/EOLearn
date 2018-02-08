@@ -73,11 +73,120 @@
                         <outlet property="emailTextField" destination="wYs-aD-TE4" id="aqp-um-AUm"/>
                         <outlet property="passwordTextField" destination="lw3-Jv-QTA" id="a7P-6j-coD"/>
                         <outlet property="signInButton" destination="ZIE-Ft-OCr" id="q7Y-Lv-qNs"/>
+                        <segue destination="FuY-u3-Co4" kind="show" identifier="openCourses" id="Y6N-hb-WV9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="456.80000000000001" y="117.39130434782609"/>
+        </scene>
+        <!--Courses-->
+        <scene sceneID="GRi-fp-M7S">
+            <objects>
+                <viewController storyboardIdentifier="CoursesViewCotroller" title="Courses" id="FuY-u3-Co4" customClass="CoursesViewCotroller" customModule="EOLearn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kdt-iy-m35">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="9jr-il-G09">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ModuleCell" textLabel="1SB-cq-nHF" rowHeight="50" style="IBUITableViewCellStyleDefault" id="YiM-o8-cOV" customClass="ModuleCell" customModule="EOLearn" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YiM-o8-cOV" id="wlP-tn-sc0">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Module" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1SB-cq-nHF">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="49.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="LectureSegmentCell" rowHeight="50" id="bSm-Rn-NUr" customClass="LectureSegmentCell" customModule="EOLearn" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="105.5" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bSm-Rn-NUr" id="NtL-Jx-FTu">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lecture Segment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TN6-l5-faa">
+                                                    <rect key="frame" x="35" y="7" width="325" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="segmentTitleLabel" destination="TN6-l5-faa" id="y2O-Sj-47Y"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="FuY-u3-Co4" id="CHc-1K-JkP"/>
+                                    <outlet property="delegate" destination="FuY-u3-Co4" id="6fV-y6-H2I"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9jr-il-G09" firstAttribute="leading" secondItem="Tdo-dJ-Uef" secondAttribute="leading" id="L10-rf-jX3"/>
+                            <constraint firstItem="9jr-il-G09" firstAttribute="bottom" secondItem="Tdo-dJ-Uef" secondAttribute="bottom" id="avw-Ha-Ram"/>
+                            <constraint firstItem="9jr-il-G09" firstAttribute="top" secondItem="Tdo-dJ-Uef" secondAttribute="top" id="mxG-oQ-oFd"/>
+                            <constraint firstItem="9jr-il-G09" firstAttribute="trailing" secondItem="Tdo-dJ-Uef" secondAttribute="trailing" id="oTx-1r-sH6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tdo-dJ-Uef"/>
+                    </view>
+                    <connections>
+                        <outlet property="coursesTableView" destination="9jr-il-G09" id="deT-AZ-4MS"/>
+                        <segue destination="v8c-pW-JSy" kind="show" identifier="openSlideShow" id="LM1-hA-VEB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rdR-bS-iUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1333.5999999999999" y="115.59220389805098"/>
+        </scene>
+        <!--Slide Show-->
+        <scene sceneID="3v2-Uf-Qbw">
+            <objects>
+                <viewController storyboardIdentifier="SlideShowViewController" title="Slide Show" id="v8c-pW-JSy" customClass="SlideShowViewController" customModule="EOLearn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Jv-1p-m3O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bf4-lV-Z0o">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Bf4-lV-Z0o" firstAttribute="top" secondItem="ipz-zf-UHm" secondAttribute="top" id="0Br-eC-KKk"/>
+                            <constraint firstItem="Bf4-lV-Z0o" firstAttribute="trailing" secondItem="ipz-zf-UHm" secondAttribute="trailing" id="3ys-O0-h9G"/>
+                            <constraint firstItem="Bf4-lV-Z0o" firstAttribute="leading" secondItem="ipz-zf-UHm" secondAttribute="leading" id="L41-h1-7ik"/>
+                            <constraint firstItem="Bf4-lV-Z0o" firstAttribute="bottom" secondItem="ipz-zf-UHm" secondAttribute="bottom" id="W9f-fG-0Ax"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ipz-zf-UHm"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="Bf4-lV-Z0o" id="jcg-9h-njw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LF7-D4-eYS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2253.5999999999999" y="116.49175412293854"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8n5-NH-IwU">

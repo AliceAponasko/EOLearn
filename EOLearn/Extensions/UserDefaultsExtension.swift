@@ -24,23 +24,6 @@ extension UserDefaults {
         set(nil, forKey: Key.authToken)
     }
 
-    // MARK: User
-
-    func currentUser() -> User? {
-        guard let user = object(
-            forKey: Key.currentUser) as? Data else {
-                return nil
-        }
-
-        return try? PropertyListDecoder().decode(User.self, from: user)
-    }
-
-    func setCurrentUser(_ user: User) {
-        if let data = try? PropertyListEncoder().encode(user) {
-            set(data, forKey: Key.currentUser)
-        }
-    }
-
     // MARK: Token
 
     func authToken() -> String? {

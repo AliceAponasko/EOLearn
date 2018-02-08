@@ -15,7 +15,7 @@ protocol Loading: class {
     var loadingIndicator: UIActivityIndicatorView { get }
 
     func startLoading()
-    func stopLoading(success: Bool)
+    func stopLoading()
 }
 
 extension Loading where Self: UIView {
@@ -44,7 +44,7 @@ extension Loading where Self: UIView {
         layoutIfNeeded()
     }
 
-    func stopLoading(success: Bool) {
+    func stopLoading() {
         isLoading = false
 
         loadingIndicator.alpha = 0.0
@@ -82,7 +82,7 @@ extension Loading where Self: UIViewController {
         view.layoutIfNeeded()
     }
 
-    func stopLoading(success: Bool) {
+    func stopLoading() {
         isLoading = false
 
         loadingIndicator.alpha = 0.0

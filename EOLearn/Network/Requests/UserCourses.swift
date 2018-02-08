@@ -1,32 +1,25 @@
 //
-//  LoginUser.swift
+//  UserCourses.swift
 //  EOLearn
 //
-//  Created by Alice Aponasko on 2/6/18.
+//  Created by Alice Aponasko on 2/7/18.
 //  Copyright © 2018 aliceaponasko. All rights reserved.
 //
 
 import Foundation
 
-enum LoginResult {
-    case success(String)
+enum UserCoursesResult {
+    case success([CourseId])
     case failure(ApiError)
-}
-
-private struct RequestKey {
-    static let email = "X-User-Email"
-    static let password = "X-User-Password"
 }
 
 extension APIClient {
 
-    // MARK: Login user
+    // MARK: User courses
 
-    func loginUser(
-        email: String,
-        password: String,
+    func userCourses(
         sender: Loading?,
-        completion: @escaping ((LoginResult) -> Void)) {
+        completion: @escaping ((UserCoursesResult) -> Void)) {
 
         if let sender = sender {
             if sender.isLoading {
@@ -34,16 +27,12 @@ extension APIClient {
             }
         }
 
-        let parameters: [String: Any] = [
-            RequestKey.email: email.lowercased().trim(),
-            RequestKey.password: password ]
-
         sender?.startLoading()
 
-        post(
-            Api.Endpoint.login,
-            parameters: parameters,
-            tokenRequired: false) { [weak self] apiRequestResult in
+        get(
+            Api.Endpoint.courses,
+            parameters: nil,
+            tokenRequired: true) { [weak self] apiRequestResult in
                 guard let strongSelf = self else {
                     return
                 }
@@ -56,7 +45,7 @@ extension APIClient {
 
                     case .failure(let error, _):
                         sender?.stopLoading()
-                        log.error("Failed to login user")
+                        log.error("Failed to fetch course IDs")
 
                         completion(.failure(error))
 
@@ -65,18 +54,16 @@ extension APIClient {
         }
     }
 
-    private func parse(_ data: Data) -> LoginResult {
+    private func parse(_ data: Data) -> UserCoursesResult {
         let decoder = JSONDecoder()
         do {
-            let token = try decoder.decode(AuthToken.self, from: data)
+            let courseIds = try decoder.decode([CourseId].self, from: data)
 
-            userDefaults.setAuthToken(token.token)
+            log.info("Course IDs are successfully fetched")
 
-            log.info("User is successfully logged in")
-
-            return .success(token.token)
+            return .success(courseIds)
         } catch {
-            log.error("Failed to parse user from json: " +
+            log.error("Failed to parse course IDs from json: " +
                 "\(String(describing: try? JSONSerialization.jsonObject(with: data, options: [])))")
             return .failure(.general)
         }

@@ -1,32 +1,27 @@
 //
-//  LoginUser.swift
+//  LectureSegmentRequest.swift
 //  EOLearn
 //
-//  Created by Alice Aponasko on 2/6/18.
+//  Created by Alice Aponasko on 2/7/18.
 //  Copyright © 2018 aliceaponasko. All rights reserved.
 //
 
 import Foundation
 
-enum LoginResult {
-    case success(String)
+enum LectureSegmentResult {
+    case success(LectureSegment)
     case failure(ApiError)
-}
-
-private struct RequestKey {
-    static let email = "X-User-Email"
-    static let password = "X-User-Password"
 }
 
 extension APIClient {
 
-    // MARK: Login user
+    // MARK: Lecture segment by id
 
-    func loginUser(
-        email: String,
-        password: String,
+    func lectureSegment(
+        lectureSegmentId: Int,
+        courseId: Int,
         sender: Loading?,
-        completion: @escaping ((LoginResult) -> Void)) {
+        completion: @escaping ((LectureSegmentResult) -> Void)) {
 
         if let sender = sender {
             if sender.isLoading {
@@ -34,16 +29,13 @@ extension APIClient {
             }
         }
 
-        let parameters: [String: Any] = [
-            RequestKey.email: email.lowercased().trim(),
-            RequestKey.password: password ]
-
         sender?.startLoading()
 
-        post(
-            Api.Endpoint.login,
-            parameters: parameters,
-            tokenRequired: false) { [weak self] apiRequestResult in
+        get(
+            "\(Api.Endpoint.course)\(courseId)" +
+            "\(Api.Endpoint.lectureSegment)\(lectureSegmentId)",
+            parameters: nil,
+            tokenRequired: true) { [weak self] apiRequestResult in
                 guard let strongSelf = self else {
                     return
                 }
@@ -56,7 +48,7 @@ extension APIClient {
 
                     case .failure(let error, _):
                         sender?.stopLoading()
-                        log.error("Failed to login user")
+                        log.error("Failed to fetch lecture segment \(lectureSegmentId)")
 
                         completion(.failure(error))
 
@@ -65,18 +57,16 @@ extension APIClient {
         }
     }
 
-    private func parse(_ data: Data) -> LoginResult {
+    private func parse(_ data: Data) -> LectureSegmentResult {
         let decoder = JSONDecoder()
         do {
-            let token = try decoder.decode(AuthToken.self, from: data)
+            let lecture = try decoder.decode(LectureSegment.self, from: data)
 
-            userDefaults.setAuthToken(token.token)
+            log.info("Lecture \(lecture.id) is successfully fetched")
 
-            log.info("User is successfully logged in")
-
-            return .success(token.token)
+            return .success(lecture)
         } catch {
-            log.error("Failed to parse user from json: " +
+            log.error("Failed to parse lecture from json: " +
                 "\(String(describing: try? JSONSerialization.jsonObject(with: data, options: [])))")
             return .failure(.general)
         }

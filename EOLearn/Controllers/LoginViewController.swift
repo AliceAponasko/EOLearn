@@ -14,6 +14,10 @@ class LoginViewController: UIViewController, Loading {
 
     private let apiClient = APIClient.shared
 
+    private enum Segue: String {
+        case openCourses
+    }
+
     // MARK: Properties
 
     private var email = ""
@@ -75,7 +79,7 @@ class LoginViewController: UIViewController, Loading {
 
                 switch result {
                 case .success:
-                    break
+                    strongSelf.openCourses()
 
                 case .failure(let error):
                     if error == .general {
@@ -88,6 +92,14 @@ class LoginViewController: UIViewController, Loading {
                     strongSelf.handleRequestError(error)
                 }
         }
+    }
+
+    // MARK: Segue
+
+    func openCourses() {
+        performSegue(
+            withIdentifier: Segue.openCourses.rawValue,
+            sender: self)
     }
 
     // MARK: Helpers

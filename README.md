@@ -45,3 +45,9 @@ Once XCode is open, click `Run` button at the top left corner.
 * Xcode Version 9.2 (9C40b)
 * [Cocoapods](https://cocoapods.org/)
 * [SwiftLint](https://github.com/realm/SwiftLint)
+
+## To Do
+
+- pull to refresh
+- courses page empty state
+- add caching

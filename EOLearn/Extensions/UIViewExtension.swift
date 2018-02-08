@@ -13,7 +13,7 @@ extension UIView {
     // MARK: Loading View
 
     static func loadingIndicator() -> UIActivityIndicatorView {
-        let loadingIndicator = UIActivityIndicatorView()
+        let loadingIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
         loadingIndicator.translatesAutoresizingMaskIntoConstraints = false
         return loadingIndicator
     }

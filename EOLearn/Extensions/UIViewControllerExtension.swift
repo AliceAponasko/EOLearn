@@ -33,8 +33,7 @@ extension UIViewController {
 
     func handleRequestError(_ error: ApiError) {
         switch error {
-        case .general,
-             .sessionExpired:
+        case .general:
             showErrorAlert(
                 title: Const.Error.errorTitle,
                 message: Const.Error.errorText)
@@ -43,6 +42,9 @@ extension UIViewController {
             showErrorAlert(
                 title: Const.Error.noInternetTitle,
                 message: Const.Error.noInternetText)
+
+        case .sessionExpired:
+            navigationController?.popToRootViewController(animated: true)
         }
     }
 }
