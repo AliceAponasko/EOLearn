@@ -20,6 +20,9 @@ git clone git@github.com:AliceAponasko/EOLearn.git
 cd EOLearn
 bundle install
 ```
+
+My Ruby version is `ruby 2.4.1p111`. Sometimes bundler gives you some errors, that could mean that you have a different ruby version than me.
+
 Now let's get those Pods!
 
 ```sh
