@@ -34,6 +34,7 @@
 		00CEEA57202BF56900CCF8D3 /* CourseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CEEA56202BF56900CCF8D3 /* CourseRequest.swift */; };
 		00CEEA59202BFFEC00CCF8D3 /* LectureSegmentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CEEA58202BFFEC00CCF8D3 /* LectureSegmentRequest.swift */; };
 		00CEEA5B202C038E00CCF8D3 /* SlideShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CEEA5A202C038E00CCF8D3 /* SlideShowViewController.swift */; };
+		00CEEA5D202C0AA300CCF8D3 /* DownloadSlideShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CEEA5C202C0AA300CCF8D3 /* DownloadSlideShow.swift */; };
 		00DDBC8C2027C19B00CF48BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC8B2027C19B00CF48BB /* AppDelegate.swift */; };
 		4DC2CB7E6A190BF36A5C5B05 /* Pods_EOLearnTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2CE6166F37A27BE010152A /* Pods_EOLearnTests.framework */; };
 		722259CE8CE06EEBAAF912C6 /* Pods_EOLearn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6719FC19C853B40BFD15BCC9 /* Pods_EOLearn.framework */; };
@@ -86,6 +87,7 @@
 		00CEEA56202BF56900CCF8D3 /* CourseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRequest.swift; sourceTree = "<group>"; };
 		00CEEA58202BFFEC00CCF8D3 /* LectureSegmentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureSegmentRequest.swift; sourceTree = "<group>"; };
 		00CEEA5A202C038E00CCF8D3 /* SlideShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideShowViewController.swift; sourceTree = "<group>"; };
+		00CEEA5C202C0AA300CCF8D3 /* DownloadSlideShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadSlideShow.swift; sourceTree = "<group>"; };
 		00DDBC882027C19B00CF48BB /* EOLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EOLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00DDBC8B2027C19B00CF48BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00DDBC9C2027C19B00CF48BB /* EOLearnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EOLearnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +193,7 @@
 				00CEEA54202BF1D800CCF8D3 /* UserCourses.swift */,
 				00CEEA56202BF56900CCF8D3 /* CourseRequest.swift */,
 				00CEEA58202BFFEC00CCF8D3 /* LectureSegmentRequest.swift */,
+				00CEEA5C202C0AA300CCF8D3 /* DownloadSlideShow.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -634,6 +637,7 @@
 				00CEEA30202ABDF100CCF8D3 /* UserDefaultsExtension.swift in Sources */,
 				00CEEA4E202BE53D00CCF8D3 /* CourseId.swift in Sources */,
 				00CEEA4C202BE4EC00CCF8D3 /* CourseModuleSegment.swift in Sources */,
+				00CEEA5D202C0AA300CCF8D3 /* DownloadSlideShow.swift in Sources */,
 				00CEEA57202BF56900CCF8D3 /* CourseRequest.swift in Sources */,
 				00CEEA51202BE8B400CCF8D3 /* ModuleCell.swift in Sources */,
 				00CEEA46202BAF6200CCF8D3 /* LectureSegment.swift in Sources */,

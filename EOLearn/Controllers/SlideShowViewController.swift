@@ -8,8 +8,13 @@
 
 import UIKit
 import WebKit
+import Alamofire
 
-class SlideShowViewController: UIViewController {
+class SlideShowViewController: UIViewController, Loading {
+
+    // MARK: Constants
+
+    private let apiClient = APIClient.shared
 
     // MARK: Parameters
 
@@ -19,16 +24,29 @@ class SlideShowViewController: UIViewController {
 
     @IBOutlet weak var webView: WKWebView!
 
+    // MARK: Loading
+
+    var isLoading: Bool = false
+    var loadingIndicator = UIView.loadingIndicator()
+
     // MARK: Lifecycle
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-        guard let url = URL(string: slideShowUrl) else {
-            return
+        apiClient.downloadSlideShow(
+        url: slideShowUrl,
+        sender: self) { [weak self] result in
+
+            switch result {
+            case .success(let slideShowPath):
+                self?.webView.loadFileURL(
+                    URL(fileURLWithPath: slideShowPath),
+                    allowingReadAccessTo: URL(fileURLWithPath: slideShowPath))
+
+            case .failure:
+                self?.navigationController?.popViewController(animated: true)
+            }
         }
-
-        webView.load(URLRequest(url: url))
     }
-    
 }

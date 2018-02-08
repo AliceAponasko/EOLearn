@@ -50,4 +50,5 @@ Once XCode is open, click `Run` button at the top left corner.
 
 - pull to refresh
 - courses page empty state
-- add caching
+- add caching for courses
+- add slide show download progress

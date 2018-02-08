@@ -147,7 +147,7 @@ class APIClient {
         completion(.success(data: data))
     }
 
-    private func didReturnError(
+    func didReturnError(
         _ response: DefaultDataResponse) -> ApiError? {
 
         if response.error != nil {
@@ -180,7 +180,7 @@ class APIClient {
         return nil
     }
 
-    private func isErrorStatusCode(
+    func isErrorStatusCode(
         _ statusCode: Int) -> ApiError? {
 
         if !hasInternetConnection() {
